@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+
+@font-face {
+   font-family: Speeder;
+   src: url(maxi_l_s.woff) format('woff'), 
+        url(maxi_l_s.ttf) format('truetype');
+}
+/*
+ Layout Sheet
+ Filename:layout.css
+*/
+
+/*===========================================================================
+/* HTML and Body styles 
+===========================================================================*/
+html {
+   background: rgb(0,112,74);
+   font-family: Verdana, Geneva, sans-serif;
+   height: 100%;
+}
+
+body {
+   background-color: rgb(238,236,224);
+   box-shadow: rgb(6, 49, 20) 10px 0px 40px, rgb(6, 49, 20) -10px 0px 40px;
+   border-left: 1px solid rgb(0, 112, 74);
+   border-right: 1px solid rgb(0, 112, 74);
+   min-height: 100%;   
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1024px;   
+   width: 100%;
+}
+
+/*===================================================================== */
+/* Header styles */
+/*===================================================================== */
+header {
+   background: linear-gradient(to top right, rgb(238,236,224) 20%, rgb(0,112,74));
+   border-bottom: 4px solid rgb(6, 49, 20);
+}
+
+header img#mainlogoimg {
+   display: block;
+   align-content: center;
+   margin: 0px auto;
+   width: 100%;
+}
+
+/*===================================================================== */
+/* Navigation list styles */
+/*===================================================================== */
+header nav ul {
+   width: auto;
+   list-style-type: square;
+}
+
+
+header nav ul li {
+   font-size: 1em;
+      
+}
+
+header nav ul li a {
+   color: rgb(51,51,51);
+   text-shadow: rgb(82,54,41) 0px 0px 1px, rgb(82,54,41) 1px 1px 3px;
+   display: block;
+   padding: 5px 70px 0px 0px;
+   width: 100%;
+}
+
+header nav ul li a:hover {
+   color: rgb(238,236,224);
+   width: auto;
+   font-style: italic;
+   font-weight: bold;
+}
+
+a#navicon {
+   display: none;
+}
+/*===================================================================== */
+/* Article Styles */
+/*===================================================================== */
+article {
+   margin: 40px auto;
+   width: 85%;
+}
+
+article h1 {
+   color: rgb(0,112,74);
+   text-shadow: white -2px 0px 0px, rgb(151, 151, 151) -5px 0px 8px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: bolder;
+   font-size: 3em;
+   font-style: oblique;
+   letter-spacing: 0.03em;
+   line-height: 1.2em;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+article p {
+   margin-bottom: 30px;
+   text-align: center;
+   font-size: 12px;
+}
+
+article ul{
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*===================================================================== */
+/* Footer styles */   
+/*===================================================================== */
+footer {
+   color:rgb(6, 49, 20);
+   height: 150px;   
+   background: linear-gradient(to top, rgb(0, 112, 74), rgb(238,236,224));
+   font-size: 0.9em;  
+   font-style: normal;
+   border-top: 2px solid rgb(6, 49, 20);
+}
+
+footer nav ul {
+   float: left;
+   padding: 30px;
+   width: 25%;
+}
+
+footer nav ul a {
+    color:rgb(6, 49, 20);
+    font-weight: bold;
+}
+
+footer nav ul a:hover {
+   text-decoration: underline;
+   color: rgb(238,236,224);
+   text-shadow: rgb(82,54,41) 0px 0px 1px, rgb(82,54,41) 1px 1px 3px;
+}
+
+
+footer::after {
+   display: table;
+   content: "";
+   clear: both;
+}
+
+/* ====================================================================
+   Mobile Styles: 0px to 640px 
+   ====================================================================
+*/
+@media only screen and (max-width: 640px) {
+
+   
+   a#navicon {
+      display: block;
+   }
+   
+   header nav {
+      padding-bottom: 15px;
+   }
+   
+   header nav ul {
+      display: none;
+   }
+   
+   header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+   }
+   
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+   
+   header img#logoimg {
+      width: 100%;
+   }
+}
+
+/*===================================================================== 
+   Tablet and Desktop Styles: greater than 640px
+===================================================================== */
+@media only screen and (min-width: 641px) {
+
+   
+   
+   header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}
+

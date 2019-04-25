@@ -1,0 +1,14 @@
+Green
+rgb(0,112,74)
+
+light kaki
+rgb(238,236,224)
+
+kaki
+rgb(174,169,133)
+
+Brown
+rgb(114,93,84)
+
+Mocha
+rgb(82,54,41)

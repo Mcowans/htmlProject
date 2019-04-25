@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*
+   Style Sheet
+   Author: Morgan Modaff
+   Date: 4-1-18  
+
+   Filename:   styles.css
+
+*/
+
+/*===================================================================== */
+/* Atmos (index) Styles */
+/*===================================================================== */
+
+article img.atmos_pic{
+    max-width: 100%;
+    height: auto;
+    padding: 7px;
+    border-radius: 50px;
+}
+
+
+
+
+/*===================================================================== */
+/* Meet our Baristas Styles */
+/*===================================================================== */
+table#mob{
+  background: linear-gradient(to bottom left,rgb(82,54,41)  , black);
+  border: 5px solid gray;
+}
+
+table#mob th, table#mob td{
+  border: 3px solid gray;
+  height: 1.4em;
+  padding: 8px;
+}
+
+table#mob thead#table_t {
+
+    font-size: 1.5em;
+
+} 
+
+
+table#mob th{
+  background: radial-gradient(farthest-side at 50% 50%, rgb(82,54,41), rgb(0,112,74)  , rgb(0, 0, 0)); 
+  color: white;
+  font-weight: normal;
+}
+
+table#mob td{
+  color:white;
+  font-size: 0.9em;
+  vertical-align: top;
+}
+
+
+/* Column Styles */
+col#firstCol{
+  width: 24%;
+}
+
+col.dataCols{
+  width: 19%;
+}
+/* Table Header Styles */
+thead tr{
+  height: 66px;
+}
+
+
+
+thead tr:first-of-type th:not(:first-of-type){  
+  color: black;
+  background-color: transparent;
+}
+/*===================================================================== */
+
+
+/*===================================================================== */
+/* Favorites Styles */
+/*===================================================================== */
+
+.wrap{
+    display: flex;
+    align-items: baseline;
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;}
+
+.ditem{
+    max-width: 240px;
+    height: 400px;
+    margin: 10px;
+
+}
+
+article figure figcaption{
+   color: rgb(51,51,51);
+   font-weight: bold;
+}
+
+/*===================================================================== */
+/* Events Styles */
+/*===================================================================== */
